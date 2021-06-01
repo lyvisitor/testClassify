@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>testClassify</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <!--构建项目的配置-->
+  <properties>
+    <!--maven构建项目使用的utf-8，-->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!--编译java代码使用的jdk版本-->
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <!--java项目运行在什么jdk版本上，这两个一致，看你自己的jdk版本-->
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>3.17</version>
+    </dependency>
+    <!-- 依赖，默认加了单元测试的依赖-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.8</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+
+</project>
